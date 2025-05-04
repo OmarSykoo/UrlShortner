@@ -60,10 +60,3 @@ GET /api/Ab12XyZ
 }
 ```
 
-
-
-#### Path Parameter
-
-- `code` — A unique 7-character alphanumeric code generated when shortening the URL.
-
-#### Example Request
