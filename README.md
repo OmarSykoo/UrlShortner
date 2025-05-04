@@ -46,6 +46,22 @@ A simple and efficient URL shortening service built with **ASP.NET Core** and **
 
 **Redirects to the original long URL associated with the short code.**
 
+GET /api/Ab12XyZ
+
+#### Behavior
+
+- If the code **exists**, the server responds with a `302 Found` and redirects to the original long URL.
+- If the code **does not exist**, the server responds with:
+
+```json
+{
+  "status": 404,
+  "message": "Url with code Ab12XyZ doesn't exist"
+}
+```
+
+
+
 #### Path Parameter
 
 - `code` — A unique 7-character alphanumeric code generated when shortening the URL.
