@@ -30,7 +30,24 @@ A simple and efficient URL shortening service built with **ASP.NET Core** and **
 **Shortens a long URL.**
 
 #### Request Body
+
 ```json
 {
   "url": "https://example.com/very/long/link"
 }
+```
+#### Response
+
+```json
+"https://localhost:5001/api/Ab12XyZ"
+```
+
+### 🔹 GET `/api/{code}`
+
+**Redirects to the original long URL associated with the short code.**
+
+#### Path Parameter
+
+- `code` — A unique 7-character alphanumeric code generated when shortening the URL.
+
+#### Example Request
